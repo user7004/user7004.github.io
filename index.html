@@ -2,15 +2,31 @@
 <head>
 	<title>Personal Mutrial</title>
 <style>
-body{
-	width: 90%;
-	margin: auto;
-	border: 2px solid black;
-}
+@media (prefers-color-scheme: dark){
+		body {color:#fff;background:#000}
+		a:link {color:#9cf}
+		a:hover, a:visited:hover {color:#cef}
+		a:visited {color:#c9f}
+	}
+	body{
+		margin:1em auto;
+		max-width:40em;
+		padding:0 .62em;
+		font:1.2em/1.62 sans-serif;
+	}
+	h1,h2,h3 {
+		line-height:1.2;
+	}
+	@media print{
+		body{
+			max-width:none
+		}
+	}
 </style>
+<!-- <meta http-equiv="refresh" content="10"/> -->
 </head>
 <body>
-<h1 style="text-align:center;">Advance Java Programming</h1>
+<h1 style="text-align:center;">Advance <em>Java</em> Programming</h1>
 <p style="text-align:center;"><u>(That no one uses)</u><p>
 <a href="bmfwebsite.html" style="text-align:center; display: block;">In case if you find this to ugly</a>
 <table style="width:100%; border:2px solid black; text-align: center;">
@@ -49,7 +65,42 @@ body{
 <p>It works as client side so less respoonse time.</p>
 <p>Plugin is required at client browser to execute applet (Drawback).</p>
 
-<h2>LifeCycle of applet:</h2>
+<h2>Life Cycle of applet:</h2>
+<ol><li><strong>init():</strong>
+		<p>public void init();</p>
+		<p>init() called as initialization because there is no main method unlike our normal java program. Every applet start with init() method.</p>
+		<p>called only once a program</p>
+	</li>
+	<li><strong>start():</strong>
+		<p>public void start();</p>
+		<p>After init() method start() method is invoked or Executed when the browser is maximized.</p>
+		<p>Contains actual code that has to be executed.</p>
+	</li>
+	<li><strong>paint():</strong>
+		<p>public void paint(Graphics g);</p>
+		<p>paint() method is used to display the content on the applet.</p>
+		<p>We can create the objects or components to the applet or we can directly write a message on the applet.</p>
+		<p>It will take Graphics class as a parameter.</p>
+	</li>
+	<li><strong>stop():</strong>
+		<p>public void stop();</p>
+		<p>Temperory stop or pushed the applet. It is executed when the browser is minimized.</p>
+	</li>
+	<li><strong>destroy():</strong>
+		<p>public void destroy();</p>
+		<p>It's used to completely close the applet. It's executed when the applet is closed.</p>
+		<p>It also execute only once.</p>
+	</li>
+</ol>
+</table>
+<h2>Param Keyword/Tag:</h2>
+<p>Also known as parameter passing technique in applet.</p>
+<p>We can pass parameter in applet through html using param Keyword.</p>
+<p>Html tag: param two attributs: name and value (simply pass the string by this).</p>
+<p><strong>Note:</strong>We are passing string. If you give integer value it also convert that into a string and then pass the data.</p>
+<p>For geting a string, getParameter() method is used.</p>
+
+
 <p> under cunstruction more metrial comming soon</P>
 
 
@@ -57,6 +108,6 @@ body{
 
 
 
-</table>
+
 </body>
 </html>
