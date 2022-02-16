@@ -66,6 +66,7 @@
 <p>Plugin is required at client browser to execute applet (Drawback).</p>
 
 <h2>Life Cycle of applet:</h2>
+<img src="applet_life_cycle.png" alt="Applet life cycle img">
 <ol><li><strong>init():</strong>
 		<p>public void init();</p>
 		<p>init() called as initialization because there is no main method unlike our normal java program. Every applet start with init() method.</p>
@@ -99,15 +100,63 @@
 <p>Html tag: param two attributs: name and value (simply pass the string by this).</p>
 <p><strong>Note:</strong>We are passing string. If you give integer value it also convert that into a string and then pass the data.</p>
 <p>For geting a string, getParameter() method is used.</p>
+<p><strong>Param Tag</strong> Attributes:</p>
+
+<table style="width: 100%; text-align: center;">
+	<tr>
+		<th>Attributes name</th>
+		<th>Value</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>Code</td>
+		<td>URL</td>
+		<td>It specifies the URL of java.class file</td>
+	</tr>
+	<tr>
+		<td>Width</td>
+		<td>Pixels</td>
+		<td>Specifies the width of applet</td>
+	</tr>
+	<tr>
+		<td>Height</td>
+		<td>Pixels</td>
+		<td>Specifies the height of applet</td>
+	</tr>
+	<tr>
+		<td>hspace</td>
+		<td>Pixels</td>
+		<td>Specifies the horizontal space around applet.</td>
+	</tr>
+	<tr>
+		<td>vspace</td>
+		<td>Pixels</td>
+		<td>Specifies the vartical space around applet.</td>
+	</tr>
+</table>
+<h2>Methods of applet:</h2>
+<p>public void setBackground(Color.COLOR);</p>
+<p>public void setForground(Color.COLOR);</p>
+<p>public void showStatus(String s);</p>
+
+<h2>Method of Graphics class:</h2>
+<p>drawString(string, x, y);</p>
+<p>drawLine(int x1, int y1, int x2, int y2);</p>
+<p>drawRect(int x, int y, int width, int height);
+</p>
+<p>drawOval(int x, int y, int width, int height);</p>
+<p>fillRect(int x, int y, int width, int height);</p>
+<p>fillOval(int x, int y, int width, int height);</p>
+<p>drawAro(int x, int y, int width, int height, int startAngle, int oreAngle);</p>
 
 
+<h2>Local Applet:</h2>
+<p>We written our own and then we will embedded in into web pages.</p>
+<p>Local applet is developed locally and stored in local system.</p>
+<p>A web page does not need to get information from internet when it find local applet in system.</p>
+<h2>Remote Applet:</h2>
+<p>A remote applet is designed and developed by another developers.</p>
+<p>It is located and avaliable on remote computer that a connected that is connected through internet.</p>
 <p> under cunstruction more metrial comming soon</P>
-
-
-
-
-
-
-
 </body>
 </html>
